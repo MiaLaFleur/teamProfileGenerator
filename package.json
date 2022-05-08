@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/MiaLaFleur/teamProfileGenerator/issues"
   },
-  "homepage": "https://github.com/MiaLaFleur/teamProfileGenerator#readme"
+  "homepage": "https://github.com/MiaLaFleur/teamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.0"
+  }
 }
