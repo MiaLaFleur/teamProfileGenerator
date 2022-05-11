@@ -67,7 +67,7 @@ const generateHTML = (userInput) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content='width=device-width, inital-scale=1.0'>
         <title>Team Portfolio</title>
-        <link rel='stylesheet' href='./style.css' />
+        <link rel='stylesheet' href='./output.css' />
         <script src="https://kit.fontawesome.com/db87bb445e.js" crossorigin="anonymous"></script>
     </head>
     <body>
