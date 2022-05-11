@@ -9,12 +9,12 @@ const generateMemberCards = (userInput) => {
             <div class='memberCard'>
                 <div class='memberCardHeader'>
                     <h2 class='employeeName'>${name}</h2>
-                    <p class='roleTitle'>Team Manager</p>
+                    <p class='roleTitle'><i class="fa-solid fa-mug-hot"></i> Team Manager</p>
                 </div>
                 <div class='memberDetails'>
-                    <h2 class='memberId'>ID# ${id}</h2>
-                    <h2 class='memberOfficeNumber'>Office # ${officeNumber}</h2>
-                    <h2 class='memberEmail'>Email: ${email}</h2>
+                    <p class='memberId'>ID# ${id}</p>
+                    <p class='memberOfficeNumber'>Office # ${officeNumber}</p>
+                    <p class='memberEmail'>Email: <a href="mailto: ${email}">${email}</a></p>
                 </div>
             </div>  
             `;
@@ -26,12 +26,12 @@ const generateMemberCards = (userInput) => {
             <div class='memberCard'>
                 <div class='memberCardHeader'>
                     <h2 class='employeeName'>${name}</h2>
-                    <p class='roleTitle'>Engineer</p>
+                    <p class='roleTitle'><i class="fa-solid fa-glasses"></i> Engineer</p>
                 </div>
                 <div class='memberDetails'>
-                    <h2 class='memberId'>ID# ${id}</h2>
-                    <h2 class='memberGithub'><a href='github.com/${github}'>GitHub: ${github}</a></h2>
-                    <h2 class='memberEmail'>Email: ${email}</h2>
+                    <p class='memberId'>ID# ${id}</p>
+                    <p class='memberGithub'>GitHub: <a href='github.com/${github}'>${github}</a></p>
+                    <p class='memberEmail'>Email: <a href="mailto: ${email}">${email}</a></p>
                 </div>
             </div>  
             `;
@@ -43,12 +43,12 @@ const generateMemberCards = (userInput) => {
             <div class='memberCard'>
                 <div class='memberCardHeader'>
                     <h2 class='employeeName'>${name}</h2>
-                    <p class='roleTitle'>Intern</p>
+                    <p class='roleTitle'><i class="fa-solid fa-user-graduate"></i> Intern</p>
                 </div>
                 <div class='memberDetails'>
-                    <h2 class='memberId'>ID# ${id}</h2>
-                    <h2 class='memberSchool'>Studies at: ${school}</h2>
-                    <h2 class='memberEmail'>Email: ${email}</h2>
+                    <p class='memberId'>ID# ${id}</p>
+                    <p class='memberSchool'>Studies at: ${school}</p>
+                    <p class='memberEmail'>Email: <a href="mailto: ${email}">${email}</a></p>
                 </div>
             </div>  
             `;
@@ -64,13 +64,15 @@ const generateHTML = (userInput) => {
     <html lang='en'>
     <head>
         <meta charset='UTF-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name='viewport' content='width=device-width, inital-scale=1.0'>
         <title>Team Portfolio</title>
         <link rel='stylesheet' href='./style.css' />
+        <script src="https://kit.fontawesome.com/db87bb445e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <h1 class='headerTitle'>My Team's Portfolio</h1>
+            <h1 class='headerTitle'>My Team</h1>
         </header>
         <main>
             ${generateMemberCards(userInput)}

@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+header {
+    background-color: #de3a3a;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.memberCard {
+    margin-left: 30px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.6);
+    width: 300px;
+    height: 350px;
+    background-color: #ededed;
+}
+
+.memberCardHeader {
+    background-color: #0040ff;
+    padding: 5px;
+    color: white;
+    padding-left: 5%;
+    font-size: 20px;
+}
+
+.memberDetails {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20%;
+}
+
+.memberDetails p {
+    border: 1px solid black;
+    margin: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    background-color: white;
+}
